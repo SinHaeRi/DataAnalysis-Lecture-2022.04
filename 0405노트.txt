@@ -1,0 +1,48 @@
+cmd
+d:
+cd \workspace
+git clone ... 02.DataAnalysis
+
+github 에서 code클릭 --> 주소 copy
+cmd
+git clone + 주소 + 디렉토리명
+
+주의사항:
+d:\workspace\.git  ===> X 절.대.금.지
+d:\workspace\01.Python\.git  ==> ㅇ
+d:\workspace\02.DataAnalysis\.git ==> ㅇ
+
+------------------------------------------
+01. Numpy
+
+de facto standard
+넘파이 사용시 무조건 import Numpy as np 적고 시작
+
+Jupyter Notebook 확장자 : .ipynb ( I Pyhton Numpy)
+
+넘파이: 파이썬의 고성능 과학 계산용 패키지
+
+특징
+- 일반 List에 비해 빠르고, 메모리를 효율적으로 사용
+list는 편리성을 극도로 추구 <--> numpy는 성능추구
+
+대부분이 trade-off: 뭐가좋으면 뭐가안좋고
+game change:모든게 좋은경우 --> 이럴땐 판이바뀜
+
+dot product: 
+[ 1 2 3          [ 1 2
+  4 5 6]           3 4
+ (2x3)             5 6 ]
+                (3x2)
+행렬 계산시 (2x3)(3x2) 가운데 3이 같아야 가능
+사이즈는 2x2 바깥숫자의 곱 
+
+첫번째항 A: 1*1 + 2*3 + 3*5 = 22
+두번째항 B: 1*2 + 2*4 + 3*6 = 28
+세번째항 C: 4*1 + 5*3 + 6*5 = 49
+네번째항 D: 4*2 + 5*4 + 6*6 = 64
+
+[ A B    [ 22 28 
+  C D      49 64 ] 
+
+Y = WX + B
